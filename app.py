@@ -21,3 +21,4 @@ app.add_app("Model Prediction", app4_predict_mobilenet.app)
 
 # Main App
 app.run()
+
