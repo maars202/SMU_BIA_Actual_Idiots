@@ -3,7 +3,7 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import numpy as np
 import argparse
-import imutils
+# import imutils
 import cv2
 import os
 from PIL import Image, ImageEnhance
@@ -17,7 +17,7 @@ from tensorflow.keras.preprocessing.image import load_img
 from tensorflow.keras.applications import imagenet_utils
 import numpy as np
 import argparse
-import imutils
+# import imutils
 import cv2
 #---------------------------------------------------------#
 # F U N C T I O N S    F O R    F A C E    B L U R R I N G
