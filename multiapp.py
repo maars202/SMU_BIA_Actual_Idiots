@@ -42,8 +42,8 @@ class MultiApp:
 
     def run(self):
         st.sidebar.header('Navigation')
-        st.sidebar.markdown(
-            'Hi there, this is the navigation tab. Scroll through to explore different sections of our project!', unsafe_allow_html=True)
+        # st.sidebar.markdown(
+        #     'Hi there, this is the navigation tab. Scroll through to explore different sections of our project!', unsafe_allow_html=True)
         app = st.sidebar.radio(
             '',
             self.apps,
