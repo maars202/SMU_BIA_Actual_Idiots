@@ -206,7 +206,7 @@ def app():
                         "talking on the phone - left", "operating the radio", 
                         "drinking", "reaching behind", 
                         "hair and makeup", " talking to passenger"]
-            st.write(f"It's a '{categories[first_img_category]}' picture.", '\n' )
+            st.header(f"It's a '{categories[first_img_category]}' picture.", '\n' )
             
             st.subheader('**Probability: **',probability,'%')
                 
