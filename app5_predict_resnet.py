@@ -44,9 +44,11 @@ def app():
 
 
 
+
+
     model_mobile = create_resnet_s()
-    # mobile_weights_path = "./saved_weights/resnet50v2.h5"
-    # model_mobile.load_weights(mobile_weights_path)
+    mobile_weights_path = "./saved_weights/resnet50v2.h5"
+    model_mobile.load_weights(mobile_weights_path)
     model_mobile.compile(
         optimizer = 'adam', 
         loss = 'categorical_crossentropy', #data generator has encoded the classes already, so in vector form
