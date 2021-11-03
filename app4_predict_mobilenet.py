@@ -207,8 +207,8 @@ def app():
                         "drinking", "reaching behind", 
                         "hair and makeup", " talking to passenger"]
             st.header(f"It's a '{categories[first_img_category]}' picture.", '\n' )
-            
-            st.subheader('**Probability: **',probability,'%')
+            st.write('\n')
+            st.subheader(f'**Probability: ** {probability}%')
                 
                 # st.sidebar.audio(audio_bytes)
                                 
