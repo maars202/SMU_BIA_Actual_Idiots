@@ -105,8 +105,7 @@ def app():
 
     #Disabling warning
     st.set_option('deprecation.showfileUploaderEncoding', False)
-    #Choose your own image
-    uploaded_file = st.file_uploader(" ",type=['png', 'jpg', 'jpeg'] )
+    
 
 
     import tensorflow as tf
@@ -133,18 +132,6 @@ def app():
         
         return test_images
 
-    # train_images, test_images, val_images = generate_data(tf.keras.applications.mobilenet_v2.preprocess_input)
-    # test_images = generate_data(tf.keras.applications.mobilenet_v2.preprocess_input)
-
-    # def process_img(img_path): # here image is file name 
-    #     img = tf.keras.preprocessing.image.load_img(img_path, target_size=(224,224))
-
-    #     img = tf.keras.preprocessing.image.img_to_array(img)
-
-    #     img = np.expand_dims(img,axis = 0)
-
-    #     return img
-
     def process_img(img_array):
         print("process_img running")
         img_array.resize((224, 224))
@@ -153,11 +140,13 @@ def app():
 
 
 
-
+    #Choose your own image
+    uploaded_file = st.file_uploader(" ",type=['png', 'jpg', 'jpeg'] )
+    
     if uploaded_file is not None:
         
         u_img = Image.open(uploaded_file)
-        show.image(u_img, 'Uploaded Image', use_column_width=True)
+        st.image(u_img, 'Uploaded Image', use_column_width=True)
         # We preprocess the image to fit in algorithm.
         image = np.asarray(u_img)/255
         # print("full image", image)
