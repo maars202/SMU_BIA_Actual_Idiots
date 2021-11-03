@@ -98,15 +98,14 @@ def app():
     # For newline
     st.write('\n')
 
-    image = Image.open('./resources/image.jpeg')
-    show = st.image(image, use_column_width=True)
+#     image = Image.open('./resources/image.jpeg')
+#     show = st.image(image, use_column_width=True)
 
     st.title("Upload Image")
 
     #Disabling warning
     st.set_option('deprecation.showfileUploaderEncoding', False)
-    #Choose your own image
-    uploaded_file = st.file_uploader(" ",type=['png', 'jpg', 'jpeg'] )
+    
 
 
     import tensorflow as tf
@@ -152,12 +151,13 @@ def app():
         return img
 
 
-
+    #Choose your own image
+    uploaded_file = st.file_uploader(" ",type=['png', 'jpg', 'jpeg'] )
 
     if uploaded_file is not None:
         
         u_img = Image.open(uploaded_file)
-        show.image(u_img, 'Uploaded Image', use_column_width=True)
+        st.image(u_img, 'Uploaded Image', use_column_width=True)
         # We preprocess the image to fit in algorithm.
         image = np.asarray(u_img)/255
         # print("full image", image)
