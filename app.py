@@ -15,7 +15,7 @@ app.add_app("Actual Idiots", app1_introduction.app)
 app.add_app("Face Blurring", app2_face_blur.app)
 app.add_app("Class Activation Maps", app3_class_activation_maps.app)
 app.add_app("Model Prediction", app4_predict_mobilenet.app)
-# app.add_app("Model Prediction", app5_predict_resnet.app)
+app.add_app("Model Prediction resnet", app5_predict_resnet.app)
 # app.add_app("Methodology", methodology_app.app)
 # app.add_app("Prototype", prototype_app.app)
 

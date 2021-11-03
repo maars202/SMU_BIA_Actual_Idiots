@@ -209,13 +209,7 @@ def app():
             st.write(f"It's a '{categories[first_img_category]}' picture.", '\n' )
             
             st.write('**Probability: **',probability,'%')
-                
-                # st.sidebar.audio(audio_bytes)
-                                
-            # else:
-            #     st.sidebar.write(" It's a 'Non-Cat' picture ",'\n')
-                
-            #     st.sidebar.write('**Probability: **',probability,'%')
+
 
 
 
