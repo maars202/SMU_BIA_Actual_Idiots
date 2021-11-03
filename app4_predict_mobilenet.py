@@ -94,7 +94,7 @@ def app():
         return Y_prediction, predictions
 
     # Designing the interface
-    st.title("Distracted Driver Classificationnn")
+    st.title("Distracted Driver Classification")
     # For newline
     st.write('\n')
 
