@@ -98,8 +98,8 @@ def app():
     # For newline
     st.write('\n')
 
-    image = Image.open('./resources/image.jpeg')
-    show = st.image(image, use_column_width=True)
+#     image = Image.open('./resources/image.jpeg')
+#     show = st.image(image, use_column_width=True)
 
     st.title("Upload Image")
 
